@@ -66,5 +66,6 @@ query {
     props: {
       recipes,
     },
+    revalidate:1,
   };
 };
