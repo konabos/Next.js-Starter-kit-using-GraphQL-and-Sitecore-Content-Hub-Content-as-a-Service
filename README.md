@@ -1,0 +1,1 @@
+# Next.js-Starter-kit-using-GraphQL-and-Sitecore-Content-Hub---Content-as-a-Service-
