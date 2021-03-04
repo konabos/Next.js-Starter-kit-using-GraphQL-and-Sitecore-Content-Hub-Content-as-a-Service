@@ -56,3 +56,4 @@ lerna-debug.log*
 # local env files
 .env.local
 yarn.lock
+.husky
