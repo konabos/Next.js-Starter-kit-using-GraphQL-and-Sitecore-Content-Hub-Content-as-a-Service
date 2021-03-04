@@ -47,6 +47,12 @@ Open [http://localhost:3000/api/exit-preview](http://localhost:3000/api/exit-pre
 - yarn lint
 - yarn test
 
+## Next Steps
+Next steps include:
+- Creating a Content Model on Sitecore Content Hub for a simple website
+- Modify the Starter code to render the website pages
+- Provide Content Model exports to spin up in a new Content Hub Instance
+
 ## Learn More
 To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
