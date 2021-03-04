@@ -11,7 +11,7 @@ Mode: (SSG) automatically generated as static HTML + JSON (uses getStaticProps)
 
 Please follow NextJS recommendations and use GetStaticProps and GetStaticPaths.
 
-The code assumes that you are using a demo instance on the latest Sitecore Content Hub. The demo instance typically has blog posts and recipies.
+The code assumes that you are using a demo instance on the latest Sitecore Content Hub. The demo instance typically has blog posts and recipes.
 
 ## Contribute
 We would love for you to contribute to this repository. Go ahead and create pull requests to make this Starter Kit better.
@@ -32,7 +32,9 @@ DELIVERY_ENDPOINT_URL=URL_OF_YOUR_DELIVERY_GRAPHQL_ENDPOINT
 6. Run 'yarn dev' - this will start a site using [http://localhost:3000](http://localhost:3000)
 
 ## Preview Mode
+
 Open [http://localhost:3000/api/preview](http://localhost:3000/api/preview) to enable preview mode. Navigate to the [http://localhost:3000](http://localhost:3000) page to see the results.
+
 Open [http://localhost:3000/api/exit-preview](http://localhost:3000/api/exit-preview) to disable preview mode. Navigate to the [http://localhost:3000](http://localhost:3000) page to see the results.
 
 ## Additional Commands
