@@ -1,7 +1,12 @@
-import '../styles/globals.css';
+import { AppProps } from 'next/app';
+import '../styles/index.css';
+import { UniformTracker } from '@uniformdev/optimize-tracker-react';
+import localTracker from '../lib/localtracker';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <UniformTracker trackerInstance={localTracker}>
+      <Component {...pageProps} />
+    </UniformTracker>
+  );
 }
-
-export default MyApp;

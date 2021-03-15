@@ -1,0 +1,41 @@
+{
+  "site": {
+    "sampleSize": 0,
+    "intents": [
+      {
+        "id": "powerfulgranola",
+        "signals": [
+          {
+            "type": "BEH",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 50
+          }
+        ]
+      },
+      {
+        "id": "healthfulchips",
+        "signals": [
+          {
+            "type": "BEH",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 50
+          }
+        ]
+      },
+      {
+        "id": "fruitfullemonade",
+        "signals": [
+          {
+            "type": "BEH",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 50
+          }
+        ]
+      }
+    ],
+    "enrichments": []
+  }
+}
