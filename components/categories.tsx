@@ -12,7 +12,9 @@ const Categories = ({ categories }: Props) => {
       {categories?.length > 0
         ? categories.map((category, index) => (
             <Link href={category.slug} key={index}>
-              <a className="font-bold p-2 text-xl hover:bg-green-200" key={index}>
+              <a
+                className="font-bold p-2 text-xl hover:bg-green-200"
+                key={index}>
                 {category.productFamilyName}
               </a>
             </Link>

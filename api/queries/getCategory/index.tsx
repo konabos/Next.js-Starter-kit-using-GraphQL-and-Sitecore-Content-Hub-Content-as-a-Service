@@ -1,5 +1,5 @@
 import { fetchGraphQL } from 'api';
-import {  productCategoryI } from '@/interfaces/index';
+import { productCategoryI } from '@/interfaces/index';
 import { productsParse } from '../sharedFunctions';
 
 export const getCategory = async (

@@ -1,4 +1,4 @@
-import {  productCategoryI } from '../interfaces';
+import { productCategoryI } from '../interfaces';
 import CoverImage from 'components/cover-image';
 
 type Props = {

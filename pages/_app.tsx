@@ -1,4 +1,3 @@
-import { AppProps } from 'next/app';
 import '../styles/index.css';
 import { UniformTracker } from '@uniformdev/optimize-tracker-react';
 import localTracker from '../lib/localtracker';
