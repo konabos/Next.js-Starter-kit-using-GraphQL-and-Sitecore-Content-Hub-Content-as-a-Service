@@ -21,6 +21,9 @@ export default function Home(props: dataI) {
       <Header preview={props.preview} />
       <Categories categories={props.categories} />
 
+      <h2 className="text-3xl text-blue-500">Welcome to the Demo site!</h2>
+      <h3 className="text-2xl text-blue-700 mb-10">You might be interested in the following products:</h3>
+
       <Personalize variations={props.categories}>
       {({variations}) => {
         return <>

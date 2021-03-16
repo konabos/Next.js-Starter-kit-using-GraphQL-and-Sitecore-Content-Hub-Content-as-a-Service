@@ -19,7 +19,6 @@ const Header = ({ preview }: Props) => {
           </div>
           <div className="row-span-3 ...">
             <h1 className="text-4xl md:text-4xl font-bold tracking-tighter leading-tight md:pr-8">
-              Welcome to{' '}
               <a
                 href="https://github.com/konabos/Next.js-Starter-kit-using-GraphQL-and-Sitecore-Content-Hub-Content-as-a-Service"
                 className="underline hover:text-success duration-200 transition-colors">

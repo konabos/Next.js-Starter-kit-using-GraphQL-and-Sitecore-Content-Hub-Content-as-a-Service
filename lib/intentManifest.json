@@ -28,6 +28,18 @@
         "id": "fruitfullemonade",
         "signals": [
           {
+            "type": "QS",
+            "freq": "visit",
+            "scope": "visitor",
+            "str": 100,
+            "value": {
+              "cs": false,
+              "expr": "lemonade",
+              "type": "exact"
+            },
+            "parameter": "utm_campaign"
+          },
+          {
             "type": "BEH",
             "freq": "always",
             "scope": "visitor",
