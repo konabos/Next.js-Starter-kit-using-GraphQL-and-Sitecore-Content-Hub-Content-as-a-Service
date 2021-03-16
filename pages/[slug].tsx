@@ -8,7 +8,7 @@ import { dataI } from '@/interfaces/index';
 import React from 'react';
 import Header from 'components/header';
 
-export default function Home(props: dataI) {
+export default function Category(props: dataI) {
   return (
     <div className="container mx-auto px-5">
       <Head>
@@ -28,7 +28,7 @@ export default function Home(props: dataI) {
           : null}
       </section>
 
-      <Footer preview={props.preview} />
+      <Footer preview={props.preview} slug={props.slug} />
     </div>
   );
 }
@@ -48,6 +48,7 @@ export const getStaticProps: GetStaticProps = async ({
     props: {
       categories,
       preview,
+      slug,
     },
     revalidate: 1,
   };

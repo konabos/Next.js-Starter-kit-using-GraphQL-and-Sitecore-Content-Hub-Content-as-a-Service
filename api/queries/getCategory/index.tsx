@@ -1,6 +1,6 @@
 import { fetchGraphQL } from 'api';
 import { productCategoryI } from '@/interfaces/index';
-import { productsParse } from '../sharedFunctions';
+import { categoryProductsParse } from '../sharedFunctions';
 
 export const getCategory = async (
   preview: boolean,
@@ -42,7 +42,9 @@ export const getCategory = async (
     }
         `;
     const categories: any = await fetchGraphQL(categoryQuery, preview);
-    const productCategoryArray: productCategoryI[] = productsParse(categories);
+    const productCategoryArray: productCategoryI[] = categoryProductsParse(
+      categories,
+    );
     return {
       categories: productCategoryArray,
     };

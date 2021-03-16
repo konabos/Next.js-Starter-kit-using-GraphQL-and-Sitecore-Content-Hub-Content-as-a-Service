@@ -1,5 +1,12 @@
+import { request } from 'node:https';
+
 export default async function handler(req, res): Promise<any> {
   res.setPreviewData({});
-  res.writeHead(307, { Location: '/' });
+  if (req.query.slug) {
+    let location = '/' + req.query.slug;
+    res.writeHead(307, { Location: location });
+  } else {
+    res.writeHead(307, { Location: '/' });
+  }
   res.end();
 }

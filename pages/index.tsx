@@ -38,7 +38,7 @@ export default function Home(props: dataI) {
         }}
       </Personalize>
 
-      <Footer preview={props.preview} />
+      <Footer preview={props.preview} slug="/" />
     </div>
   );
 }

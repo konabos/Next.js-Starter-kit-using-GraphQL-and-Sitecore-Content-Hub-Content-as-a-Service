@@ -20,7 +20,7 @@ export const convertIntents = (value: string[]): IntentTags | undefined => {
   };
 };
 
-export function productsParse(productFeed): productCategoryI[] {
+export function categoryProductsParse(productFeed): productCategoryI[] {
   const productCategoryArray: productCategoryI[] = [];
   productCategoryArray.pop();
 
@@ -78,4 +78,40 @@ export function productsParse(productFeed): productCategoryI[] {
   });
 
   return productCategoryArray;
+}
+
+export function productsParse(productFeed): productI[] {
+  console.log(productFeed);
+  const productArray: productI[] = [];
+  productArray.pop();
+
+  productFeed.data.allM_PCM_Product.results.map((p) => {
+    const assetArray: assetI[] = [];
+    assetArray.pop();
+    p.pCMProductToAsset.results.map((pa) => {
+      pa.assetToPublicLink.results.map((publicLink) => {
+        if (assetArray.length < 1) {
+          const asset: assetI = {
+            relativeUrl: publicLink.relativeUrl,
+            versionHash: publicLink.versionHash,
+            url:
+              process.env.CH_BASE_URL +
+              publicLink.relativeUrl +
+              '?' +
+              publicLink.versionHash,
+          };
+          assetArray.push(asset);
+        }
+      });
+    });
+
+    const product: productI = {
+      productName: p.productName,
+      productShortDescription: p.productShortDescription['en-US'],
+      productLongDescription: p.productLongDescription['en-US'],
+      assets: assetArray,
+    };
+    productArray.push(product);
+  });
+  return productArray;
 }

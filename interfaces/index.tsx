@@ -16,6 +16,12 @@ export interface assetI {
 export interface dataI {
   categories: productCategoryI[];
   preview: boolean;
+  slug: string;
+}
+
+export interface productDataI {
+  products: productI[];
+  preview: boolean;
 }
 
 export interface productCategoryI {

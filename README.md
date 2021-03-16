@@ -1,7 +1,7 @@
 # Next.js Starter kit using GraphQL and Sitecore Experience Edge for Content Hub - Content as a Service!
 
-## Demo Url
-[https://next-js-starter-sitecore-content-hub.vercel.app/](Demo Site)
+[Demo Site](https://next-js-starter-sitecore-content-hub.vercel.app/)
+
 
 ## Stack
 
