@@ -1,4 +1,4 @@
-import {  productCategoryI } from '../interfaces';
+import { productCategoryI } from '../interfaces';
 import CoverImage from 'components/cover-image';
 import { useBehaviorTracking } from '@uniformdev/optimize-tracker-react';
 
@@ -12,9 +12,7 @@ const ProductCategory = ({ category }: Props) => {
     <section>
       <div>
         <h2 className="text-3xl mb-3 leading-snug">
-          <a className="hover:underline">
-            {category.productFamilyName} 
-          </a>
+          <a className="hover:underline">{category.productFamilyName}</a>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-4 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">

@@ -1,5 +1,9 @@
 import { productI, assetI, productCategoryI } from '@/interfaces/index';
-import { IntentTagVector, IntentTags, IntentTagStrength } from '@uniformdev/optimize-common';
+import {
+  IntentTagVector,
+  IntentTags,
+  IntentTagStrength,
+} from '@uniformdev/optimize-common';
 
 export const convertIntents = (value: string[]): IntentTags | undefined => {
   if (!value.length) {
@@ -9,12 +13,12 @@ export const convertIntents = (value: string[]): IntentTags | undefined => {
   return {
     intents: value.reduce<IntentTagVector>((previous, current) => {
       previous[current] = {
-        str: 50
-      }
+        str: 50,
+      };
       return previous;
-    }, {})
-  }
-}
+    }, {}),
+  };
+};
 
 export function productsParse(productFeed): productCategoryI[] {
   const productCategoryArray: productCategoryI[] = [];
@@ -55,9 +59,9 @@ export function productsParse(productFeed): productCategoryI[] {
 
     var intent = c.productFamilyName.toLowerCase();
     intent = intent.replace(/ /g, '');
-    
-    var  i:IntentTagVector = {
-      [intent]: { str: IntentTagStrength.Normal } 
+
+    var i: IntentTagVector = {
+      [intent]: { str: IntentTagStrength.Normal },
     };
 
     const productCategory: productCategoryI = {
@@ -67,7 +71,7 @@ export function productsParse(productFeed): productCategoryI[] {
       type: 'productFamily',
       intentTag: {
         intents: i,
-      }, 
+      },
       slug: c.slug,
     };
     productCategoryArray.push(productCategory);
