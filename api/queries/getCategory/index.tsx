@@ -14,6 +14,7 @@ export const getCategory = async (
           id
           productFamilyName
           productFamilyLabel
+          productFamilyShortDescription
           slug
           pCMProductFamilyToProduct {
             results {

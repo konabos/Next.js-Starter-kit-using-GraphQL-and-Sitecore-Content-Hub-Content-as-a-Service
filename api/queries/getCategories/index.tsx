@@ -13,6 +13,7 @@ export const getCategories = async (
           id
           productFamilyName
           productFamilyLabel
+          productFamilyShortDescription
           slug
           pCMProductFamilyToProduct {
             results {
