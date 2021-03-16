@@ -11,9 +11,12 @@
     "format": "prettier --write **/*.{js,ts,tsx,scss}",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "yarn format && yarn lint && yarn type-check",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "generate:intents": "uniform optimize manifest download --output ./lib/intentManifest.json --apiKey 9b2c1b24-3c60-48cd-b342-ee9038d73951"
   },
   "dependencies": {
+    "@uniformdev/optimize-tracker-browser": "^5.0.1",
+    "@uniformdev/optimize-tracker-react": "^5.0.1",
     "next": "10.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1"
@@ -23,6 +26,8 @@
     "@types/react": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
+    "@uniformdev/cli": "^5.0.1",
+    "autoprefixer": "^10.2.5",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -32,7 +37,9 @@
     "husky": "^5.1.3",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
+    "postcss": "^8.2.8",
     "prettier": "^2.2.1",
+    "tailwindcss": "^2.0.3",
     "typescript": "^4.2.2"
   },
   "husky": {
