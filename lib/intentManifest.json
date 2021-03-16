@@ -46,6 +46,17 @@
             "str": 50
           }
         ]
+      },
+      {
+        "id": "powerfulsnackbars",
+        "signals": [
+          {
+            "type": "BEH",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 50
+          }
+        ]
       }
     ],
     "enrichments": []

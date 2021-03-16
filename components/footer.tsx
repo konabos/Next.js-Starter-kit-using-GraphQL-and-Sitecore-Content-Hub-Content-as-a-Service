@@ -3,9 +3,10 @@ import Link from 'next/link';
 
 type Props = {
   preview: boolean;
+  slug: string;
 };
 
-const Footer = ({ preview }: Props) => {
+const Footer = ({ preview, slug }: Props) => {
   return (
     <footer className="bg-accent-1 border-t border-accent-2">
       <div className="container mx-auto px-5">
@@ -32,7 +33,7 @@ const Footer = ({ preview }: Props) => {
             <a className="font-bold">Exit Preview Mode</a>
           </Link>
         ) : (
-          <Link href="/api/preview">
+          <Link href={`/api/preview?slug=${encodeURIComponent(slug)}`}>
             <a className="font-bold">Enter Preview Mode</a>
           </Link>
         )}
