@@ -31,7 +31,11 @@ export default function Home(props: dataI) {
           return (
             <>
               {variations.map((category, index) => (
-                <ProductCategory category={category} key={index} />
+                <ProductCategory
+                  category={category}
+                  key={index}
+                  trackBehavior={false}
+                />
               ))}
             </>
           );

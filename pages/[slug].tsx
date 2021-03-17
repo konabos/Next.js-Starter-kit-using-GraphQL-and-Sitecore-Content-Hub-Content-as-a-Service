@@ -22,7 +22,7 @@ export default function Category(props: dataI) {
         {props.categories?.length > 0
           ? props.categories.map((category, index) => (
               <div key={index}>
-                <ProductCategory category={category} />
+                <ProductCategory category={category} trackBehavior={true} />
               </div>
             ))
           : null}
