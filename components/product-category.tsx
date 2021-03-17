@@ -4,10 +4,13 @@ import { useBehaviorTracking } from '@uniformdev/optimize-tracker-react';
 
 type Props = {
   category: productCategoryI;
+  trackBehavior: boolean;
 };
 
-const ProductCategory = ({ category }: Props) => {
-  useBehaviorTracking(category.intentTag);
+const ProductCategory = ({ category, trackBehavior }: Props) => {
+  if (trackBehavior) {
+    useBehaviorTracking(category.intentTag);
+  }
   return (
     <section>
       <div>
